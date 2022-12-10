@@ -1,20 +1,9 @@
 extends StaticBody2D
 
-const spaceship := preload("res://src/space_ship.tscn")
-
-signal activate_gra
-
 class_name Planet
 
-var gra_constant := 75 # G in da formula
-export var mass := 500 # default val?
-var muck
-var aa = false 
-
-# Declare member variables here. Examples:
-# var a: int = 2
-# var b: String = "text"
-#onready var area : Area2D = $Area2D
+var gra_constant := 150 # G in da formula
+export var mass := 700 # default val?
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

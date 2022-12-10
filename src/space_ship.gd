@@ -55,7 +55,7 @@ func calculate_grav_accel() -> void:
 	for planet in arrayOfNearbyPlanets:
 		var relative_position : Vector2 = Vector2(	planet.global_position.x - global_position.x,
 													planet.global_position.y - global_position.y)
-		var gra_force = planet.mass * planet.gra_constant / pow(relative_position.length(),1)
+		var gra_force = planet.mass * planet.gra_constant / pow(relative_position.length(),2)
 		var accel = relative_position * ((gra_force / mass) / relative_position.length())
 		acceleration_gravity += accel
 
@@ -71,7 +71,7 @@ func throttler() -> void:
 	if Input.is_action_pressed("accelerate") and arrayOfNearbyPlanets.size() == 0:
 		acceleration_input = Vector2(0.0,-1.0).rotated(rotation)
 	elif Input.is_action_pressed("accelerate"):
-		acceleration_input = Vector2(0.0,-3.0).rotated(rotation)
+		acceleration_input = Vector2(0.0,-10.0).rotated(rotation)
 	else:
 		acceleration_input = Vector2.ZERO
 		
