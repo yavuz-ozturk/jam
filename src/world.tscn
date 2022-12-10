@@ -12,7 +12,7 @@ script = ExtResource( 3 )
 [node name="Space" type="Sprite" parent="."]
 texture = ExtResource( 4 )
 
-[node name="Earth" parent="Space" instance=ExtResource( 5 )]
+[node name="Earth" parent="." instance=ExtResource( 5 )]
 position = Vector2( 4808, -968 )
 
 [node name="planet" parent="." instance=ExtResource( 2 )]
