@@ -30,41 +30,41 @@ position = Vector2( 1480, -832 )
 [node name="planet5" parent="." instance=ExtResource( 2 )]
 position = Vector2( -1232, -360 )
 
+[node name="planet7" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2536, 1824 )
+
+[node name="planet8" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2144, 560 )
+
+[node name="planet9" parent="." instance=ExtResource( 2 )]
+position = Vector2( -3560, -1240 )
+
+[node name="planet10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6488, 1960 )
+
+[node name="planet11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3712, 944 )
+
+[node name="planet12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 6248, -80 )
+
+[node name="planet13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3344, -1976 )
+
+[node name="planet14" parent="." instance=ExtResource( 2 )]
+position = Vector2( -592, -2216 )
+
+[node name="planet15" parent="." instance=ExtResource( 2 )]
+position = Vector2( -5800, -1816 )
+
+[node name="planet16" parent="." instance=ExtResource( 2 )]
+position = Vector2( -4568, 784 )
+
+[node name="planet17" parent="." instance=ExtResource( 2 )]
+position = Vector2( -472, -1112 )
+
 [node name="planet6" parent="." instance=ExtResource( 2 )]
 position = Vector2( 872, 1816 )
-
-[node name="planet" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( -3408, 8 )
-
-[node name="planet2" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( -3016, -1256 )
-
-[node name="planet3" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( -4432, -3056 )
-
-[node name="planet4" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( 5616, 144 )
-
-[node name="planet5" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( 2840, -872 )
-
-[node name="planet6" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( 5376, -1896 )
-
-[node name="planet7" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( 2472, -3792 )
-
-[node name="planet8" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( -1464, -4032 )
-
-[node name="planet9" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( -6672, -3632 )
-
-[node name="planet10" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( -5440, -1032 )
-
-[node name="planet11" parent="planet6" instance=ExtResource( 2 )]
-position = Vector2( -1344, -2928 )
 
 [node name="Space_ship" parent="." instance=ExtResource( 1 )]
 position = Vector2( 480, 256 )
