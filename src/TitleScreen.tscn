@@ -58,7 +58,8 @@ margin_bottom = 550.0
 text = "Key bindings:
 c- throttle break
 up/x- propel the jet
-right/left- rotations to the respective sides"
+right/left- rotations to the respective sides
+r- to restart the game"
 valign = 1
 
 [connection signal="pressed" from="TitleSpace/Container/Play" to="." method="_on_Play_pressed"]
