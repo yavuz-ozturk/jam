@@ -90,7 +90,8 @@ text = "Key bindings:
 c to throttle break
 up or x to propel the jet
 right and left to make rotations to the respective sides
-r- to restart the game"
+r- to restart the game
+p to pause and unpause the game"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": true
