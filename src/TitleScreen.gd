@@ -17,3 +17,6 @@ func _on_Exit_pressed() -> void:
 
 func _on_Play_pressed() -> void:
 	get_tree().change_scene("res://src/world.tscn")
+
+func _on_Credits_pressed() -> void:
+	get_tree().change_scene("res://src/CreditScene.tscn")
