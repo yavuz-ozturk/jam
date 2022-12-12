@@ -3,7 +3,7 @@ extends StaticBody2D
 class_name Planet
 
 var gra_constant := 150 # G in da formula
-export var mass := 1000 # default val?
+export var mass := 700 # default val?
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
