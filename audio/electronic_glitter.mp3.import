@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/electronic_glitter.mp3-e1308401cf9b3fc0d5bf4584c4355df2.mp3str"
+
+[deps]
+
+source_file="res://audio/electronic_glitter.mp3"
+dest_files=[ "res://.import/electronic_glitter.mp3-e1308401cf9b3fc0d5bf4584c4355df2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
