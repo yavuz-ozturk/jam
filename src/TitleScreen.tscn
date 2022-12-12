@@ -86,11 +86,14 @@ anchor_right = 0.500977
 anchor_bottom = 0.916667
 margin_right = -65.0
 custom_fonts/font = SubResource( 2 )
-text = "Key bindings:
-c to throttle break
-up or x to propel the jet
-right and left to make rotations to the respective sides
-r- to restart the game
+text = "FIND THE LOST PLANET
+
+Bindings:
+UP or X to propel M.I.R.A.C.L.E.
+LEFT and RIGHT arrows to rotate
+C to throttle break
+P to pause
+R to restart the game
 p to pause and unpause the game"
 valign = 1
 __meta__ = {
