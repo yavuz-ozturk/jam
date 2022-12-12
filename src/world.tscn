@@ -16,6 +16,10 @@ texture = ExtResource( 4 )
 [node name="Earth" parent="." instance=ExtResource( 5 )]
 position = Vector2( 4808, -968 )
 
+[node name="EarthCollision" type="CollisionShape2D" parent="Earth"]
+position = Vector2( 0, -6 )
+shape = SubResource( 1 )
+
 [node name="planet" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1168, 408 )
 
