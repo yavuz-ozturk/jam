@@ -24,30 +24,39 @@ texture = ExtResource( 1 )
 expand = true
 
 [node name="RetryButton" type="Button" parent="TitleSpace"]
-margin_left = 808.0
-margin_top = 456.0
-margin_right = 968.0
-margin_bottom = 496.0
+anchor_left = 0.789063
+anchor_top = 0.76
+anchor_right = 0.945313
+anchor_bottom = 0.826667
 custom_fonts/font = SubResource( 1 )
 text = "Restart"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Label" type="Label" parent="TitleSpace"]
-margin_right = 1024.0
-margin_bottom = 384.0
+anchor_right = 1.0
+anchor_bottom = 0.64
 custom_fonts/font = SubResource( 2 )
 text = "Congratulations on finding the Earth...
 
 Now what???"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="BackButton" type="Button" parent="TitleSpace"]
-margin_left = 808.0
-margin_top = 512.0
-margin_right = 971.0
-margin_bottom = 552.0
+anchor_left = 0.789063
+anchor_top = 0.853333
+anchor_right = 0.948242
+anchor_bottom = 0.92
 custom_fonts/font = SubResource( 1 )
 text = "Back To The Main Menu"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [connection signal="pressed" from="TitleSpace/RetryButton" to="." method="_on_RetryButton_pressed"]
 [connection signal="pressed" from="TitleSpace/BackButton" to="." method="_on_BackButton_pressed"]

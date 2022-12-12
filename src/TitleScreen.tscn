@@ -23,56 +23,67 @@ anchor_bottom = 1.0
 script = ExtResource( 2 )
 
 [node name="TitleSpace" type="TextureRect" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -512.0
-margin_top = -300.0
-margin_right = 512.0
-margin_bottom = 300.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 1 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Play" type="Button" parent="TitleSpace"]
-margin_left = 776.0
-margin_top = 368.0
-margin_right = 984.0
-margin_bottom = 408.0
+anchor_left = 0.757813
+anchor_top = 0.613333
+anchor_right = 0.960938
+anchor_bottom = 0.68
 custom_fonts/font = SubResource( 3 )
 text = "Play"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Exit" type="Button" parent="TitleSpace"]
-margin_left = 776.0
-margin_top = 496.0
-margin_right = 984.0
-margin_bottom = 536.0
+anchor_left = 0.757813
+anchor_top = 0.826667
+anchor_right = 0.960938
+anchor_bottom = 0.893333
 custom_fonts/font = SubResource( 3 )
 text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Credits" type="Button" parent="TitleSpace"]
-margin_left = 776.0
-margin_top = 432.0
-margin_right = 984.0
-margin_bottom = 472.0
+anchor_left = 0.757813
+anchor_top = 0.72
+anchor_right = 0.960938
+anchor_bottom = 0.786667
+margin_top = -3.05176e-05
 custom_fonts/font = SubResource( 3 )
 text = "Credits"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Label" type="Label" parent="TitleSpace"]
-margin_left = 200.0
-margin_top = 128.0
-margin_right = 832.0
-margin_bottom = 272.0
+anchor_left = 0.195313
+anchor_top = 0.213333
+anchor_right = 0.8125
+anchor_bottom = 0.453333
 custom_fonts/font = SubResource( 1 )
 text = "the untitled space game"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Label2" type="Label" parent="TitleSpace"]
-margin_left = 40.0
-margin_top = 450.0
-margin_right = 448.0
-margin_bottom = 550.0
+anchor_left = 0.0390625
+anchor_top = 0.75
+anchor_right = 0.500977
+anchor_bottom = 0.916667
+margin_right = -65.0
 custom_fonts/font = SubResource( 2 )
 text = "Key bindings:
 c to throttle break
@@ -80,6 +91,9 @@ up or x to propel the jet
 right and left to make rotations to the respective sides
 r- to restart the game"
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [connection signal="pressed" from="TitleSpace/Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="TitleSpace/Exit" to="." method="_on_Exit_pressed"]
