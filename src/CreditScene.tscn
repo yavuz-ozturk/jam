@@ -23,25 +23,32 @@ anchor_bottom = 1.0
 texture = ExtResource( 1 )
 expand = true
 
-[node name="Label" type="Label" parent="."]
-margin_top = 56.0
-margin_right = 1024.0
-margin_bottom = 376.0
+[node name="Label" type="Label" parent="TitleSpace"]
+anchor_right = 1.0
+anchor_bottom = 0.826667
 custom_fonts/font = SubResource( 1 )
 text = "Tarık Demiroren as Game Developer, Game Design, Sound Design
 
 omer Yavuz ozturk as Game Developer, Game Design, Art Direction
 
-Asya Doga - 冰淇淋 - Bıing Chillin"
+Music: \"Art of Silence - by Uniq\" is under a Creative Commons license 
+(Creative Commons – International Recognition 4.0 – CC BY 4.0)"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
-[node name="BackToTheMenu" type="Button" parent="."]
-margin_left = 768.0
-margin_top = 504.0
-margin_right = 984.0
-margin_bottom = 560.0
+[node name="BackToTheMenu" type="Button" parent="TitleSpace"]
+anchor_left = 0.75
+anchor_top = 0.84
+anchor_right = 0.960938
+anchor_bottom = 0.933333
+margin_top = 3.05176e-05
 custom_fonts/font = SubResource( 2 )
 text = "Back To The Main Menu"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
-[connection signal="pressed" from="BackToTheMenu" to="." method="_on_BackToTheMenu_pressed"]
+[connection signal="pressed" from="TitleSpace/BackToTheMenu" to="." method="_on_BackToTheMenu_pressed"]
