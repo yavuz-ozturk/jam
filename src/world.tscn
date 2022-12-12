@@ -5,7 +5,7 @@
 [ext_resource path="res://src/world.gd" type="Script" id=3]
 [ext_resource path="res://assets/Space.png" type="Texture" id=4]
 [ext_resource path="res://src/Earth.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/background_music.mp3" type="AudioStream" id=6]
+[ext_resource path="res://audio/background_music.mp3" type="AudioStream" id=6]
 
 [node name="world" type="Node2D"]
 script = ExtResource( 3 )

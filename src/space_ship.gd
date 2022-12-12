@@ -75,6 +75,10 @@ func throttler() -> void:
 	else:
 		acceleration_input = Vector2.ZERO
 		
+	if Input.is_action_just_pressed("accelerate"):
+		$JetPropel.play()
+
+		
 func throttle_stop(delta: float) -> void:
 	if Input.is_action_pressed("stop") and velocity.length() > 0:
 		acceleration_input = -(velocity / (delta * acceleration_coefficient * stop_pump)) - acceleration_gravity - acceleration_impact

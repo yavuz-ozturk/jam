@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/space_ship.gd" type="Script" id=1]
 [ext_resource path="res://assets/spaceship.png" type="Texture" id=2]
+[ext_resource path="res://audio/beam_sound.mp3" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 17.0
@@ -24,3 +25,6 @@ polygon = PoolVector2Array( 10, 14, 14, 20, 6, 16 )
 
 [node name="LeftFoot" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( -10, 14, -13, 20, -6, 16 )
+
+[node name="JetPropel" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
