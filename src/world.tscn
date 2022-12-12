@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/Space_ship.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/planet.tscn" type="PackedScene" id=2]
@@ -8,15 +8,28 @@
 [ext_resource path="res://audio/background_music.mp3" type="AudioStream" id=6]
 [ext_resource path="res://src/Pause_Scene.tscn" type="PackedScene" id=7]
 
+[sub_resource type="CircleShape2D" id=1]
+radius = 244.591
+
 [node name="world" type="Node2D"]
 pause_mode = 2
 script = ExtResource( 3 )
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="WallsCollision" type="CollisionPolygon2D" parent="Walls"]
+position = Vector2( -7116.5, -15.75 )
+polygon = PoolVector2Array( 640.5, -2484.25, 398.5, 747.75, 141.5, 717.75, 383.5, -2876.25, 14141.5, -2861.25, 14549.5, 203.75, 13688.5, 3224.75, 746.5, 3118.75, 81.5, 1049.75, 398.5, 974.75, 927.5, 2741.75, 13582.5, 2695.75, 13688.5, -2514.25 )
 
 [node name="Space" type="Sprite" parent="."]
 texture = ExtResource( 4 )
 
 [node name="Earth" parent="." instance=ExtResource( 5 )]
 position = Vector2( 4808, -968 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Earth"]
+position = Vector2( -1, -10 )
+shape = SubResource( 1 )
 
 [node name="planet" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1168, 408 )
